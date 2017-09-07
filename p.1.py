@@ -2,11 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-
 currentPage = 1
 pages = 6
-
-
 
 def getText(root, findTag, findClass):
     return root.find(findTag, findClass).text.strip().encode("utf-8")
